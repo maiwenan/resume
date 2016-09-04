@@ -1,0 +1,146 @@
+{
+	"resumeTpl": "rigorous",
+  "resumeTitle":  "麦文安 - 个人简历",
+  "repo": "https://github.com/maiwenan/resume.git",
+  "basicInfo": {
+    "name": "麦文安",
+    "picture": "",
+    "alias": "mhaw",
+    "jobDescription": ["前端工程师"],
+    "contact": {
+      "phone": 15521338556,
+      "email": "maiwenan@gmail.com",
+      "github": "https://github.com/maiwenan",
+      "address": "广州"
+    }
+  },
+  "links": [{
+    "type": "repo",
+    "text": "源代码",
+    "url": "https://github.com/maiwenan/resume"
+  }, {
+    "type": "pdf",
+    "text": "简历下载",
+    "url": "dist/maiwenan.pdf"
+  }],
+  "education": [{
+    "type": "undergraduate",
+    "name": "华南农业大学",
+    "major": "信息管理与信息系统",
+    "start": "2010",
+    "end": "2014",
+    "honor": []
+  }],
+  "language": [{
+    "type": "english",
+    "certificate": [{
+      "type": "CET-4",
+      "full": "710",
+      "score": "488"
+    }],
+    "description": [
+      "能顺利阅读英文技术文档和博客等"
+    ]
+  }],
+  "experience": [{
+    "type": "company",
+    "name": "广州市路人甲软件有限公司",
+    "position": "前端开发",
+    "start": "2014.04",
+    "end": "2016.09",
+    "projects": [{
+      "techtype": "frontend",
+      "name": "淘店长自动橱窗",
+      "start": "2014.05",
+      "end": "2014.07",
+      "position": "前端开发",
+      "description": [
+        "使用 jQuery 开发了为淘宝商家提供宝贝自动上架的功能",
+        "解决浏览器兼容问题（`IE7+`）"
+      ],
+      "stack": ["jQuery"],
+      "compatibility": "IE7+"
+    }, {
+      "techtype": "frontend",
+      "name": "淘店长交易",
+      "start": "2014.11",
+      "end": "2015.10",
+      "position": "前端开发",
+      "description": [
+        "为淘宝商家开发订单管理、评价管理以及打单等功能",
+        "使用 Grunt 和 ant 搭建了前端的工作流",
+        "使用 Sea.js 进行代码的模块化组织",
+        "使用 artTtemplate 模板引擎把数据及业务逻辑从 UI 的渲染中分离开，让数据逻辑部分容易进行测试"
+      ],
+      "stack": ["Grunt", "jQuery", "Sea.js", "artTtemplate"],
+      "compatibility": "modern broswer"
+    }, {
+      "techtype": "frontend",
+      "name": "淘店长交易移动端",
+      "start": "2015.07",
+      "end": "2015.09",
+      "position": "前端开发",
+      "description": [
+        "为淘宝商家开发移动端的订单管理、评价管理以及拣货等功能",
+        "使用 Gulp 和 maven 等工具搭建了前端的工作流及 WebPack 管理代码的模块化",
+        "使用 React 、 Reflux 和 React-router 开发了组件化的、数据驱动 UI 的单页应用",
+        "部分页面针对 React 的渲染进行了性能优化"
+      ],
+      "stack": ["Gulp", "WebPack", "React", "Reflux", "Less"],
+      "compatibility": "modern broswer"
+    }, {
+      "techtype": "frontend",
+      "name": "自动旺旺托管精灵",
+      "start": "2016.04",
+      "end": "2016.07",
+      "position": "前端开发",
+      "description": [
+        "基于 NW.js 开发了在淘宝千牛上根据用户设置的消息任务来自动发送旺旺消息及消息转发的功能",
+        "使用 React 进行界面的渲染和 Redux 管理应用的状态及 Immutable 实现不可变的数据操作",
+        "部分页面列表的渲染做了一定的性能优化"
+      ],
+      "stack": ["WebPack", "React", "Redux", "Immutable", "Sass", "NW.js"]
+    }]
+  }, {
+    "type": "project",
+    "name": "个人项目",
+    "projects": [{
+      "techtype": "frontend",
+      "name": "React-Ios-Component",
+      "repo": "https://github.com/maiwenan/react-ios-component",
+      "demo": "https://maiwenan.github.io/react-ios-component/example",
+      "description": [
+        "根据 ios9 规范使用 React 开发的 Web 组件库",
+        "使用 Mocha 和 Karma 对组件进行测试",
+        "使用 Eslint 和 Sass-lint 来规范代码风格",
+        "使用 WebPack 打包成 UMD 风格的前端组件类库"
+      ],
+      "stack": ["WebPack", "React", "Sass", "Mocha", "Karma", "Eslint", "Sass-lint"],
+      "compatibility": "modern broswer"
+    }]
+  }],
+  "skills": [{
+    "type": "frontend",
+    "name": "Web 前端",
+    "list": [
+      "能够编写语义化的 HTML 和 模块化的 CSS ，实现较复杂的布局",
+      "了解 HTML5 和 CSS3 的特性，在个人实验项目中会尝试使用",
+      "熟悉 DOM 与 BOM 的使用，了解 ES2015 的语法及有桌面 / 移动端组件的开发经验",
+      "了解面向对象的 JavaScript 编程及熟悉 jQuery 的使用以及扩展，了解函数式编程",
+      "有在项目中处理过一些简单的浏览器兼容性处理以及性能优化",
+      "熟悉使用 React 搭配 Flux 、 Redux 及 Reflux 等状态管理库开发应用，并有过项目实践，了解 Vue , 和 AngularJS 的使用",
+      "在项目中使用过 Sea.js 和 WebPack 等模块化管理工具",
+      "在项目中使用过 Sass 和 Less 等 CSS 预处理工具",
+      "能够使用 Gulp 和 Grunt 等工具优化工作流"
+    ]
+  }, {
+    "type": "backend",
+    "name": "Web 后端",
+    "list": [
+      "了解 HTTP1.x 和 TCP/IP 等协议，了解常用的 Linux 命令行操作，能编写简单的 base 脚本",
+      "能够使用 Node.js API 、 Express 、 Koa(1、2) 搭建简单的后台服务器",
+      "能够使用 Mocha 和 Chai 编写单元测试及使用 Karma 在浏览器环境运行测试用列",
+      "有简单实用过 MongoDB 和 MySQL 等数据库"
+    ]
+  }]
+}

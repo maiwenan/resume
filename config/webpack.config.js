@@ -2,7 +2,7 @@ var path = require('path');
 var webpack = require('webpack');
 var autoprefixer = require('autoprefixer');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
-var OpenBrowserPlugin = require('open-browser-webpack-plugin');
+var ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 var resume = require('../data/resume.json');
 
@@ -12,6 +12,7 @@ module.exports = {
     app: './index.js'
   },
   output: {
+    path: path.resolve(__dirname, '../dist'),
     filename: '[name].js'
   },
   module: {
@@ -23,11 +24,11 @@ module.exports = {
       },
       {
         test: /\.scss$/,
-        loader: 'style!css!postcss!sass'
+        loader: ExtractTextPlugin.extract('style', 'css!postcss!sass')
       },
       {
         test: /\.less$/,
-        loader: 'style!css!postcss!less'
+        loader: ExtractTextPlugin.extract('style', 'css!postcss!less')
       },
       {
         test: /\.(eot|ttf|woff|woff2|svg)(\?.*)?(#.*)?$/,
@@ -46,14 +47,15 @@ module.exports = {
     }
   },
   plugins: [
+    new webpack.optimize.OccurenceOrderPlugin(),
+    new webpack.DefinePlugin({
+      'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV)
+    }),
     new HtmlWebpackPlugin({
       title: resume.resumeTitle,
       template: path.resolve(__dirname, '../src/index.html')
     }),
-    new OpenBrowserPlugin({
-      url: 'http://localhost:3000'
-    })
+    new ExtractTextPlugin('app.css')
   ],
-  postcss: [autoprefixer],
-  devtool: 'eval'
+  postcss: [autoprefixer]
 };

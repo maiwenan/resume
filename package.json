@@ -4,7 +4,7 @@
   "description": "个人简历生成器 (personal resume generator)",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server --hot --inline --color --port 3000 --config config/webpack.config.dev.js"
+    "start": "webpack-dev-server --hot --inline --color --port 3000 --config config/webpack.config.dev.js --host 0.0.0.0"
   },
   "keywords": [
     "resume",

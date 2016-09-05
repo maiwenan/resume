@@ -21,10 +21,10 @@ export default function (props) {
             <article className="column-6 first column">
               <Education education={props.education} />
               <Language language={props.language} />
-              <Experience experience={props.experience} />
+              <Skills skills={props.skills} />
             </article>
             <article className="column-6 last column">
-              <Skills skills={props.skills} />
+              <Experience experience={props.experience} />
             </article>
           </article>
         </main>

@@ -34,9 +34,7 @@
   "language": [{
     "type": "english",
     "certificate": [{
-      "type": "CET-4",
-      "full": "710",
-      "score": "488"
+      "type": "CET-4"
     }],
     "description": [
       "能顺利阅读英文技术文档和博客等"
@@ -44,51 +42,11 @@
   }],
   "experience": [{
     "type": "company",
-    "name": "广州市路人甲软件有限公司",
+    "name": "广州市路人甲软件",
     "position": "前端开发",
     "start": "2014.04",
     "end": "2016.09",
     "projects": [{
-      "techtype": "frontend",
-      "name": "淘店长自动橱窗",
-      "start": "2014.05",
-      "end": "2014.07",
-      "position": "前端开发",
-      "description": [
-        "使用 jQuery 开发了为淘宝商家提供宝贝自动上架的功能",
-        "解决浏览器兼容问题（`IE7+`）"
-      ],
-      "stack": ["jQuery"],
-      "compatibility": "IE7+"
-    }, {
-      "techtype": "frontend",
-      "name": "淘店长交易",
-      "start": "2014.11",
-      "end": "2015.10",
-      "position": "前端开发",
-      "description": [
-        "为淘宝商家开发订单管理、评价管理以及打单等功能",
-        "使用 Grunt 和 ant 搭建了前端的工作流",
-        "使用 Sea.js 进行代码的模块化组织",
-        "使用 artTtemplate 模板引擎把数据及业务逻辑从 UI 的渲染中分离开，让数据逻辑部分容易进行测试"
-      ],
-      "stack": ["Grunt", "jQuery", "Sea.js", "artTtemplate"],
-      "compatibility": "modern broswer"
-    }, {
-      "techtype": "frontend",
-      "name": "淘店长交易移动端",
-      "start": "2015.07",
-      "end": "2015.09",
-      "position": "前端开发",
-      "description": [
-        "为淘宝商家开发移动端的订单管理、评价管理以及拣货等功能",
-        "使用 Gulp 和 maven 等工具搭建了前端的工作流及 WebPack 管理代码的模块化",
-        "使用 React 、 Reflux 和 React-router 开发了组件化的、数据驱动 UI 的单页应用",
-        "部分页面针对 React 的渲染进行了性能优化"
-      ],
-      "stack": ["Gulp", "WebPack", "React", "Reflux", "Less"],
-      "compatibility": "modern broswer"
-    }, {
       "techtype": "frontend",
       "name": "自动旺旺托管精灵",
       "start": "2016.04",
@@ -100,6 +58,35 @@
         "部分页面列表的渲染做了一定的性能优化"
       ],
       "stack": ["WebPack", "React", "Redux", "Immutable", "Sass", "NW.js"]
+    }, {
+      "techtype": "frontend",
+      "name": "淘店长交易移动端",
+      "start": "2015.07",
+      "end": "2015.09",
+      "position": "前端开发",
+      "description": [
+        "在淘宝千牛客户端为淘宝商家开发移动端的订单管理、评价管理以及拣货等功能",
+        "使用 Gulp 和 maven 等工具搭建了前端的工作流及 WebPack 管理代码的模块化",
+        "使用 React 、 Reflux 和 React-router 开发了组件化的、数据驱动 UI 的单页应用",
+        "针对首页和列表做了资源按需加载以及数据缓存，页面渲染时间缩短了将近 50% ",
+        "订单等列表页面针对 React 的渲染进行了性能优化，下拉加载数据回来渲染不再卡顿 (1000 条数据以内)"
+      ],
+      "stack": ["Gulp", "WebPack", "React", "Reflux", "Less"],
+      "compatibility": "modern broswer"
+    }, {
+      "techtype": "frontend",
+      "name": "淘店长交易",
+      "start": "2014.11",
+      "end": "2015.10",
+      "position": "前端开发",
+      "description": [
+        "为用户开发订单管理、评价管理以及打单等功能",
+        "使用 Grunt 和 ant 搭建了前端的工作流",
+        "使用 Sea.js 进行代码的模块化组织",
+        "使用 artTtemplate 模板引擎把数据及业务逻辑从 UI 的渲染中分离开，让数据逻辑部分容易进行测试"
+      ],
+      "stack": ["Grunt", "jQuery", "Sea.js", "artTtemplate"],
+      "compatibility": "modern broswer"
     }]
   }, {
     "type": "project",
@@ -111,7 +98,7 @@
       "demo": "https://maiwenan.github.io/react-ios-component/example",
       "description": [
         "根据 ios9 规范使用 React 开发的 Web 组件库",
-        "使用 Mocha 和 Karma 对组件进行测试",
+        "使用 Mocha 、 Enzyme 和 Karma 对组件进行测试",
         "使用 Eslint 和 Sass-lint 来规范代码风格",
         "使用 WebPack 打包成 UMD 风格的前端组件类库"
       ],
@@ -128,7 +115,7 @@
       "熟悉 DOM 与 BOM 的使用，了解 ES2015 的语法及有桌面 / 移动端组件的开发经验",
       "了解面向对象的 JavaScript 编程及熟悉 jQuery 的使用以及扩展，了解函数式编程",
       "有在项目中处理过一些简单的浏览器兼容性处理以及性能优化",
-      "熟悉使用 React 搭配 Flux 、 Redux 及 Reflux 等状态管理库开发应用，并有过项目实践，了解 Vue , 和 AngularJS 的使用",
+      "熟悉使用 React 搭配 Flux 、 Redux 及 Reflux 等状态管理库开发应用，并有过项目实践，了解 Vue 和 AngularJS 的使用",
       "在项目中使用过 Sea.js 和 WebPack 等模块化管理工具",
       "在项目中使用过 Sass 和 Less 等 CSS 预处理工具",
       "能够使用 Gulp 和 Grunt 等工具优化工作流"
